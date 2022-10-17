@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mediator.Application", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mediator.Infrastructure", "src\Mediator.Infrastructure\Mediator.Infrastructure.csproj", "{A2F0F7E1-837A-47AF-B2CD-11D1DB9B55DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator.Domain", "Mediator.Domain\Mediator.Domain.csproj", "{263F50CB-2EE3-44CD-9431-AB79131A6EE5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator.Domain", "src\Mediator.Domain\Mediator.Domain.csproj", "{263F50CB-2EE3-44CD-9431-AB79131A6EE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

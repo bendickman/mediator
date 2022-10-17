@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mediator.Application\Mediator.Application.csproj" />
+    <ProjectReference Include="..\Mediator.Domain\Mediator.Domain.csproj" />
     <ProjectReference Include="..\Mediator.Infrastructure\Mediator.Infrastructure.csproj" />
   </ItemGroup>
 
