@@ -1,6 +1,6 @@
+using Mediator.Application.Features.Product;
 using Mediator.Application.Interfaces.Command;
 using Mediator.Application.Interfaces.Query;
-using Mediator.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using static Mediator.Application.Features.Product.List;
 using static Mediator.Application.Features.Product.Upsert;
@@ -27,18 +27,18 @@ namespace Mediator.API.Controllers
             CancellationToken cancellationToken)
         {
             var result = await _queryDispatcher
-                .Dispatch<ProductListQuery, IEnumerable<Product>>(new ProductListQuery(), cancellationToken);
+                .Dispatch<ProductListQuery, IEnumerable<ProductDto>>(new ProductListQuery(), cancellationToken);
 
             return Ok(result);
         }
 
         [HttpPost(Name = "CreateEdit")]
         public async Task<IActionResult> Upsert(
-           Product product,
+           ProductDto product,
            CancellationToken cancellationToken)
         {
             var result = await _commandDispatcher
-                .Dispatch<Product, ProductUpsertResponse>(product, cancellationToken);
+                .Dispatch<ProductDto, ProductUpsertResponse>(product, cancellationToken);
 
             if (!result.isSuccess)
             {

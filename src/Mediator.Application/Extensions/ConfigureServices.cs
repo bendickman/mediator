@@ -16,6 +16,8 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddSingleton<IQueryDispatcher, QueryDispatcher>()
                 .Decorate<IQueryDispatcher, QueryDispatcherDectorator>();
 
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
             // INFO: Using https://www.nuget.org/packages/Scrutor for registering all Query and Command handlers by convention
             services.Scan(selector =>
             {

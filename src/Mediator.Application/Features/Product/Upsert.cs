@@ -4,9 +4,9 @@ namespace Mediator.Application.Features.Product
 {
     public class Upsert
     {
-        public class ProductUpsertHandler : ICommandHandler<Domain.Entities.Product, ProductUpsertResponse>
+        public class ProductUpsertHandler : ICommandHandler<ProductDto, ProductUpsertResponse>
         {
-            public Task<ProductUpsertResponse> Handle(Domain.Entities.Product command, CancellationToken cancellationToken)
+            public Task<ProductUpsertResponse> Handle(ProductDto command, CancellationToken cancellationToken)
             {
                 // upsert logic here
                 var result = new ProductUpsertResponse(true);
