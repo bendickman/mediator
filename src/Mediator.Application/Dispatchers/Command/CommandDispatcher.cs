@@ -1,7 +1,7 @@
 ﻿using Mediator.Application.Interfaces.Command;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Mediator.Infrastructure.Dispatchers.Command
+namespace Mediator.Application.Dispatchers.Command
 {
     public class CommandDispatcher : ICommandDispatcher
     {

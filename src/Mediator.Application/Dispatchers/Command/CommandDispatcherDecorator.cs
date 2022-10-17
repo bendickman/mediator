@@ -1,7 +1,7 @@
 ﻿using Mediator.Application.Interfaces.Command;
 using System.Diagnostics;
 
-namespace Mediator.Infrastructure.Dispatchers.Command
+namespace Mediator.Application.Dispatchers.Command
 {
     public class CommandDispatcherDecorator : ICommandDispatcher
     {

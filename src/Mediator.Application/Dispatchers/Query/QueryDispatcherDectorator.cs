@@ -1,7 +1,7 @@
 ﻿using Mediator.Application.Interfaces.Query;
 using System.Diagnostics;
 
-namespace Mediator.Infrastructure.Dispatchers.Query
+namespace Mediator.Application.Dispatchers.Query
 {
     public class QueryDispatcherDectorator : IQueryDispatcher
     {

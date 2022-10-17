@@ -1,7 +1,7 @@
 ﻿using Mediator.Application.Interfaces.Query;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Mediator.Infrastructure.Dispatchers.Query
+namespace Mediator.Application.Dispatchers.Query
 {
     internal class QueryDispatcher : IQueryDispatcher
     {
