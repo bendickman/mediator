@@ -31,6 +31,10 @@ This layer is a simple class library that contains all application logic. It is 
 
 This layer defines interfaces that are implemented by outside layers. For example, if the application need to access a notification service, a new interface would be added to application and an implementation would be created within infrastructure.
 
+### Mediator.Domain
+
+This layer is a simple class library that contains all entities, enums, exceptions, interfaces, types and logic specific to the domain layer.
+
 ## Technologies
 
 * [.NET 6](https://docs.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0)
